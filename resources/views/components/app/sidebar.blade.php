@@ -8,27 +8,27 @@
   dark:[&::-webkit-scrollbar-track]:bg-neutral-700
   dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
     :class="expanded ? 'w-64' : 'w-16'">
-    <div class="flex flex-col items-start  space-y-6 mt-10 ">
+    <div class="flex flex-col items-start mt-10 space-y-6 ">
         <!-- Home -->
-        <div class="flex flex-col items-start  w-full">
+        <div class="flex flex-col items-start w-full">
 
             <x-sidebar.section icon="fas fa-home" title="Admin">
-                <a href="/users" class="block px-2 py-1  pl-6 bg-bg-200 hover:bg-bg-300 w-full">Users</a>
-                <a href="/clients" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Clients</a>
-                <a href="/analytics" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Analytics</a>
+                <a href="/users" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Users</a>
+                <a href="/clients" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Clients</a>
+                <a href="/roles" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Roles</a>
             </x-sidebar.section>
             <x-sidebar.section icon="fas fa-chart-line" title="Dashboard">
-                <a href="/users" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Users</a>
-                <a href="/clients" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Clients</a>
-                <a href="/analytics" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Analytics</a>
+                <a href="/users" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Users</a>
+                <a href="/clients" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Clients</a>
+                <a href="/analytics" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Analytics</a>
             </x-sidebar.section>
             <x-sidebar.section icon="fas fa-cog" title="settings">
-                <a href="/users" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Users</a>
-                <a href="/clients" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Clients</a>
-                <a href="/analytics" class="block px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300 w-full">Analytics</a>
+                <a href="/users" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Users</a>
+                <a href="/clients" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Clients</a>
+                <a href="/analytics" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Analytics</a>
             </x-sidebar.section>
         </div>
-        <div class="flex items-center flex-col ml-4 pb-4 mt-auto">
+        <div class="flex flex-col items-center pb-4 mt-auto ml-4">
             <a href="#" @click.prevent="toggleDarkMode()" x-text="darkMode ? '🔆' : '🌑'"
                 class="text-xl sm:hidden"></a>
         </div>
