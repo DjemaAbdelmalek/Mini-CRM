@@ -1,5 +1,5 @@
 <div @mouseenter="expanded = true, openSectionSideBar = true" @mouseleave="expanded = false,openSectionSideBar = false"
-    class="fixed top-0 left-0 h-screen bg-bg-100 text-text-100 transition-all duration-300 border-r-1 border-bg-300
+    class="fixed top-0 left-0 h-screen bg-bg-100 text-text-100 transition-all duration-300 border-r-1 border-bg-300 z-10
      overflow-y-auto scrollbar-thin [&::-webkit-scrollbar]:w-1
   [&::-webkit-scrollbar-track]:rounded-full
   [&::-webkit-scrollbar-track]:bg-gray-100
@@ -7,7 +7,7 @@
   [&::-webkit-scrollbar-thumb]:bg-gray-300
   dark:[&::-webkit-scrollbar-track]:bg-neutral-700
   dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
-    :class="expanded ? 'w-64' : 'w-16'">
+    :class="expanded ? 'w-90 md:w-64' : 'w-16'">
     <div class="flex flex-col items-start mt-10 space-y-6 ">
         <!-- Home -->
         <div class="flex flex-col items-start w-full">

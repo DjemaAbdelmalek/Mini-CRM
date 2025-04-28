@@ -1,4 +1,4 @@
-<div x-data="{ showEditForm: false, editZoneId: null }" class="relative flex flex-col items-center justify-around flex-1 overflow-hidden">
+<div x-data="{ showEditForm: false, editZoneId: null }" class="relative z-0 flex flex-col items-center justify-around flex-1">
     <form wire:submit.prevent="createZone"
         class="flex flex-col items-center justify-center w-4/5 p-10 space-y-6 rounded-lg shadow-md lg:w-1/5 md:w-2/5 dark:shadow-bg-200 bg-bg-200">
         @csrf
