@@ -13,9 +13,10 @@
         <div class="flex flex-col items-start w-full">
 
             <x-sidebar.section icon="fas fa-home" title="Admin">
-                <a href="/users" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Users</a>
-                <a href="/clients" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Clients</a>
-                <a href="/roles" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Roles</a>
+                <a href={{ route('zones') }} class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Zones</a>
+                <a href={{ route('roles') }} class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Roles</a>
+                <a href={{ route('users') }} class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Users</a>
+                <a href={{ route('clients') }} class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Clients</a>
             </x-sidebar.section>
             <x-sidebar.section icon="fas fa-chart-line" title="Dashboard">
                 <a href="/users" class="block w-full px-2 py-1 pl-6 bg-bg-200 hover:bg-bg-300">Users</a>

@@ -18,7 +18,7 @@ class RoleComponent extends Component
             'name'=> $this->title,
             ]);
         $this->reset();
-        return $this->redirect('/roles');
+        return $this->redirect(route('roles'));
     }
 
     public function delete($id){

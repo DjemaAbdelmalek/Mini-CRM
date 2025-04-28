@@ -36,6 +36,10 @@ class User extends Component
 
         return redirect(route("users"));
     }
+
+    public function delete($id){
+        UserModel::findOrFail($id)->delete();
+    }
     public function render()
 
     {

@@ -24,13 +24,18 @@
     @else
         <div class="grid w-4/5 grid-cols-1 gap-2 lg:grid-cols-3 md:grid-cols-2">
             @foreach ($roles as $role)
-                <article class="flex items-center justify-between w-full px-4 py-2 rounded-md shadow-lg bg-bg-300"
+                <article class="flex items-center justify-between w-full px-4 py-2 rounded-lg bg-bg-200"
                     key={{ $role->id }}>
-                    <p class="font-bold capitalize">{{ $role->name }}</p>
+                    <div class="space-x-1">
+                        <p class="inline-block md:text-xl text-md">{{ $role->name }}</p>
+                        @if ($role->updated_at != $role->created_at)
+                            <p class="inline-block text-[10px] text-text-200/40">Edited</p>
+                        @endif
+                    </div>
                     <button wire:click="delete({{ $role->id }})"
                         onclick="confirm('Are you sure you want to delete this role?') || event.stopImmediatePropagation()"
-                        class="text-xs font-bold text-red-500 uppercase cursor-pointer">delete
-                        role</button>
+                        class="font-bold text-red-500 uppercase cursor-pointer -md:text-xs"><i
+                            class="fas fa-trash"></i></button>
                 </article>
             @endforeach
         </div>
