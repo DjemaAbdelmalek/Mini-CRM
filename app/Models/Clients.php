@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Clients extends Model
 {
     use HasFactory;
-
-    public function zones()
+    protected $fillable = [
+        'name', 'email', 'phone', 'company_name', 'status', 'notes', 'zone_id'
+    ];
+    public function zone()
     {
         return $this->belongsTo(Zone::class);
     }
